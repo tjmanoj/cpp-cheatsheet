@@ -2,12 +2,12 @@
 using namespace std;
 
 int main(){
-    ofstream fin;
+    ofstream fout;
 
-    fin.open("sample.txt",ios::in);
-    fin.seekp(5,ios_base::cur);        // move the pointer 5 times from beginning
-    fin.write("Manoj",5);              // replace the text Manoj of size 5 chars.
-    fin.close();
+    fout.open("sample.txt",ios::in);
+    fout.seekp(5,ios_base::cur);        // move the pointer 5 times from beginning
+    fout.write("Manoj",5);              // replace the text Manoj of size 5 chars.
+    fout.close();
 }
 
 //sample.txt
